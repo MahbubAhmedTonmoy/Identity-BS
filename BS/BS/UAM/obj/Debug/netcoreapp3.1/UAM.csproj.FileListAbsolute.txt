@@ -1,0 +1,12 @@
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.deps.json
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.dll
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.pdb
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csprojAssemblyReference.cache
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.AssemblyInfoInputs.cache
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.AssemblyInfo.cs
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csproj.CopyComplete
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.dll
+C:\Users\ahmed.mahbub\Desktop\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.pdb

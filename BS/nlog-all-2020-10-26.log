@@ -1,0 +1,31 @@
+2020-10-26 13:23:44.3041|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:23:44.3515|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:23:44.3612|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 13:24:59.6751|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:24:59.7401|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:24:59.7461|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 13:26:02.4917|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:26:02.5408|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:26:02.5408|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 13:29:11.6937|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user bc39617a-2e01-40e2-a32e-ef3268bf6a05.
+2020-10-26 13:29:11.6988|WARN|Microsoft.AspNetCore.Identity.SignInManager|User bc39617a-2e01-40e2-a32e-ef3268bf6a05 failed to provide the correct password.
+2020-10-26 13:29:11.8037|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2020-10-26 13:47:35.3586|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:47:35.4095|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:47:35.4155|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 13:51:57.1297|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:51:57.1817|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:51:57.1817|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 13:53:14.1557|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2020-10-26 13:58:53.2580|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 13:58:53.2995|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 13:58:53.2995|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 14:00:39.9844|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 14:00:40.0306|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 14:00:40.0306|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 14:14:34.9304|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 14:14:34.9792|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 14:14:34.9792|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
+2020-10-26 14:15:19.7499|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-10-26 14:15:19.7925|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-10-26 14:15:19.7925|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\BS\BS\WebAPI
