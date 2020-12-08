@@ -113,7 +113,18 @@ namespace WebAPI.Controllers
             if (result.Succeeded) return Ok();
             else return BadRequest();
         }
-
+        [HttpGet("ResendConfirmEmail")]
+        public async Task<IActionResult> ResendConfirmEmail(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return BadRequest("Error");
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var confirmationLink = Url.Action(nameof(ConfirmEmail), "Auth", new { token, email = user.Email }, Request.Scheme);
+            var message = new Message(new string[] { user.Email }, "resend Confirmation email link", confirmationLink, null);
+            await _emailSender.SendEmailAsync(message);
+            return Ok();
+        }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserLoginDTO userForLoginDTO)
