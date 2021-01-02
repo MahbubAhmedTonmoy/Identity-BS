@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Core;
 using EmailService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -20,6 +21,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using UAM;
 using WebAPI.Data;
+using WebAPI.Infrastructure;
 
 namespace WebAPI
 {
@@ -46,11 +48,11 @@ namespace WebAPI
                     opt.TokenLifespan = TimeSpan.FromHours(2)); // confirm email , reset password token
 
             var emailConfig = Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
-            services.AddSingleton(emailConfig);
-
+            services.AddSingleton(emailConfig); 
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IEmailSender, EmailSender>();
             services.AddScoped<IJwtGenerator, JwtGenerator>();
-
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddAuthentication(x =>

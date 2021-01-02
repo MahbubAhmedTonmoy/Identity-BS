@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Data;
 
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210102084103_student1")]
+    partial class student1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +37,12 @@ namespace WebAPI.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("StudentId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
 
                     b.ToTable("Courses");
                 });
@@ -47,9 +54,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -57,8 +61,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
 
                     b.HasIndex("UserId");
 
@@ -277,14 +279,15 @@ namespace WebAPI.Migrations
                     b.HasDiscriminator().HasValue("AppUser");
                 });
 
+            modelBuilder.Entity("Core.Course", b =>
+                {
+                    b.HasOne("Core.Student", null)
+                        .WithMany("Courses")
+                        .HasForeignKey("StudentId");
+                });
+
             modelBuilder.Entity("Core.Student", b =>
                 {
-                    b.HasOne("Core.Course", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Core.AppUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");

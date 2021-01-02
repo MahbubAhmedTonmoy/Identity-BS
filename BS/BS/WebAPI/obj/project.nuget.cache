@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qdYuPWaZTO2SrHXI7uF0EPeFPfFkB6//xytFbqJLdjNVTtkoVz6US2ktH+9F6XB+ahF8KqWp7uo4p5LcfmWRag==",
+  "dgSpecHash": "lv/0est+LcCiqxkB/xQoPp9++AFkk1WbnV2WDF7rCFA11NjTa3i1u7uaH3O0bwwfQrtMIkZd/poSh9IVwUPAWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\closedxml\\0.95.3\\closedxml.0.95.3.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
@@ -127,7 +129,7 @@
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

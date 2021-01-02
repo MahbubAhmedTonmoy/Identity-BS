@@ -176,9 +176,6 @@ C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\bin\Debug\netcoreapp3.1\C
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\bin\Debug\netcoreapp3.1\EmailService.pdb
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\bin\Debug\netcoreapp3.1\UAM.pdb
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csprojAssemblyReference.cache
-C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfoInputs.cache
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfo.cs
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.RazorTargetAssemblyInfo.cache
@@ -188,3 +185,8 @@ C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\s
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
