@@ -9,6 +9,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using UAM;
 using UAM.DTO;
+using WebAPI.Data;
+using WebAPI.Infrastructure;
 
 namespace WebAPI.Controllers
 {
@@ -23,9 +25,11 @@ namespace WebAPI.Controllers
         private readonly ILogger<AuthController> _logger;
         private readonly IJwtGenerator _jwtGenerator;
         private readonly IEmailSender _emailSender;
+        private readonly AppDbContext appDbContext;
+
         public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager,
             SignInManager<AppUser> signInManager, IConfiguration config, ILogger<AuthController> logger,
-             IJwtGenerator jwtGenerator, IEmailSender emailSender)
+             IJwtGenerator jwtGenerator, IEmailSender emailSender, AppDbContext appDbContext)
         {
             _jwtGenerator = jwtGenerator;
             _userManager = userManager;
@@ -34,6 +38,7 @@ namespace WebAPI.Controllers
             _config = config;
             _logger = logger;
             _emailSender = emailSender;
+            this.appDbContext = appDbContext;
         }
 
 
@@ -142,8 +147,11 @@ namespace WebAPI.Controllers
                 {
                     var role = await _userManager.GetRolesAsync(userExist);
                     string[] roleAssigned = role.ToArray();
-
-                    return Ok(_jwtGenerator.CreateToken(userExist, roleAssigned));
+                    var token = _jwtGenerator.CreateToken(userExist, roleAssigned);
+                    userExist.RefreshToken = token.RefreshToken;
+                    appDbContext.AppUsers.Update(userExist);
+                    appDbContext.SaveChanges();
+                    return Ok(token);
                 }
             }
             catch (Exception ex)
@@ -173,7 +181,7 @@ namespace WebAPI.Controllers
                 email = tempClaimPrincipal[2].Value;
                 //-----
                 var userExist = await _userManager.FindByEmailAsync(email);
-                if (userExist == null)
+                if (userExist == null || userExist.RefreshToken != refreshTokenDTO.RefreshToken)
                 {
                     return BadRequest($"this {email} is not resisrered");
                 }
@@ -223,7 +231,7 @@ namespace WebAPI.Controllers
             return Ok();
         }
 
-        [HttpGet("VerificationCode")]
+        [HttpGet("LoginTwoStep VerificationCode")]
         public async Task<IActionResult> LoginTwoStep(string email, bool rememberMe, string returnUrl = null)
         {
             var user = await _userManager.FindByEmailAsync(email);

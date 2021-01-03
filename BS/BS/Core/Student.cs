@@ -26,28 +26,28 @@ namespace Core
 
 namespace test
 {
-    public class Post
+    public class Post : BaseEntity
     {
         public int Id { get; set; }
         public string UserId { get; set; }
         public AppUser User { get; set; }
-        public DateTime PostDate { get; set; }
+        public DateTime PostDate { get; set; } = DateTime.Now;
         public string Description { get; set; }
         public ICollection<Comment> Comments { get; set; }
     }
-    public class Comment
+    public class Comment : BaseEntity
     {
         public int Id { get; set; }
         public int PostId { get; set; }
         public string CommenterId { get; set; }
         public AppUser Commenter { get; set; }
         public Post Post { get; set; }
-        public DateTime CommentDate { get; set; }
+        public DateTime CommentDate { get; set; } = DateTime.Now;
         public string Description { get; set; }
         public ICollection<Like> Likes { get; set; }
         public ICollection<Dislike> Dislikes { get; set; }
     }
-    public class Like
+    public class Like : BaseEntity
     {
         public int Id { get; set; }
         public string LikerId { get; set; }
@@ -57,7 +57,7 @@ namespace test
         public int PostId { get; set; }
         public Post Post { get; set; }
     }
-    public class Dislike
+    public class Dislike : BaseEntity
     {
         public int Id { get; set; }
         public string DislikerId { get; set; }
