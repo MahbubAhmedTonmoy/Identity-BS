@@ -66,3 +66,49 @@ namespace test
         public Comment Comment { get; set; }
     }
 }
+namespace test2
+{
+    /// <summary>
+    /// ai system e student and teacher table e semesterReg tale er primary key porbe
+    /// </summary>
+    //public class SemesterReg : BaseEntity
+    //{
+    //    public int SemesterNumber { get; set; }
+    //    public List<Students> Students { get; set; }
+    //    public List<Teachers> Teachers { get; set; }
+    //}
+    ///<summary>
+    /// table colum : Id, createdate, smesternumber, studentId, teacherId
+    ///</summary>
+    public class SemesterReg : BaseEntity
+    {
+        public int SemesterNumber { get; set; }
+    }
+    public class Students : BaseEntity
+    {
+        public string UserId { get; set; }
+        public AppUser User { get; set; }
+        public string Semester { get; set; }
+        public double CGPA { get; set; }
+        public List<SemesterReg> semesterRegs { get; set; }
+    }
+    public class Teachers: BaseEntity
+    {
+        public string UserId { get; set; }
+        public AppUser User { get; set; }
+        public string Semester { get; set; }
+        public List<SemesterReg> semesterRegs { get; set; }
+    }
+    public class Courses : BaseEntity
+    {
+        public string CourseId { get; set; }
+        public String CourseName { get; set; }
+        public List<Students> Student { get; set; }
+        public List<Teachers> Teachers { get; set; }
+    }
+    public class BaseEntity
+    {
+        public int Id { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+    }
+}

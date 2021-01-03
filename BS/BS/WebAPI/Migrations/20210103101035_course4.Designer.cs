@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Data;
 
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210103101035_course4")]
+    partial class course4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -255,17 +257,7 @@ namespace WebAPI.Migrations
                     b.Property<int>("SemesterNumber")
                         .HasColumnType("int");
 
-                    b.Property<int?>("StudentsId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TeachersId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("StudentsId");
-
-                    b.HasIndex("TeachersId");
 
                     b.ToTable("SemesterRegs");
                 });
@@ -289,12 +281,17 @@ namespace WebAPI.Migrations
                     b.Property<string>("Semester")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SemesterRegId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CoursesId");
+
+                    b.HasIndex("SemesterRegId");
 
                     b.HasIndex("UserId");
 
@@ -317,12 +314,17 @@ namespace WebAPI.Migrations
                     b.Property<string>("Semester")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SemesterRegId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CoursesId");
+
+                    b.HasIndex("SemesterRegId");
 
                     b.HasIndex("UserId");
 
@@ -390,22 +392,15 @@ namespace WebAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("test2.SemesterReg", b =>
-                {
-                    b.HasOne("test2.Students", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("StudentsId");
-
-                    b.HasOne("test2.Teachers", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("TeachersId");
-                });
-
             modelBuilder.Entity("test2.Students", b =>
                 {
                     b.HasOne("test2.Courses", null)
                         .WithMany("Student")
                         .HasForeignKey("CoursesId");
+
+                    b.HasOne("test2.SemesterReg", null)
+                        .WithMany("Students")
+                        .HasForeignKey("SemesterRegId");
 
                     b.HasOne("Core.AppUser", "User")
                         .WithMany()
@@ -417,6 +412,10 @@ namespace WebAPI.Migrations
                     b.HasOne("test2.Courses", null)
                         .WithMany("Teachers")
                         .HasForeignKey("CoursesId");
+
+                    b.HasOne("test2.SemesterReg", null)
+                        .WithMany("Teachers")
+                        .HasForeignKey("SemesterRegId");
 
                     b.HasOne("Core.AppUser", "User")
                         .WithMany()

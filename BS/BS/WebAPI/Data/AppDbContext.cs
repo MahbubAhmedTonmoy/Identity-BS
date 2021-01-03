@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Net;
 using System.Net.Mail;
 using test;
+using test2;
 
 namespace WebAPI.Data
 {
@@ -15,10 +16,11 @@ namespace WebAPI.Data
             //Update-Database
         }
         public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<Post> Posts { get; set; }
-        public DbSet<Comment> Comments { get; set; }
-        public DbSet<Like> Likes { get; set; }
-        public DbSet<Dislike> Dislikes { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<Courses> Courses { get; set; }
+
+        public DbSet<SemesterReg> SemesterRegs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

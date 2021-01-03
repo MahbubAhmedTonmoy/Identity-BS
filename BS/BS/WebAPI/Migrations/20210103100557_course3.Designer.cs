@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Data;
 
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210103100557_course3")]
+    partial class course3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -242,34 +244,6 @@ namespace WebAPI.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("test2.SemesterReg", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("SemesterNumber")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("StudentsId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TeachersId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StudentsId");
-
-                    b.HasIndex("TeachersId");
-
-                    b.ToTable("SemesterRegs");
-                });
-
             modelBuilder.Entity("test2.Students", b =>
                 {
                     b.Property<int>("Id")
@@ -388,17 +362,6 @@ namespace WebAPI.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("test2.SemesterReg", b =>
-                {
-                    b.HasOne("test2.Students", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("StudentsId");
-
-                    b.HasOne("test2.Teachers", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("TeachersId");
                 });
 
             modelBuilder.Entity("test2.Students", b =>

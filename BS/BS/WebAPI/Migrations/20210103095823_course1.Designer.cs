@@ -3,21 +3,54 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Data;
 
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210103095823_course1")]
+    partial class course1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("Core.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CourseId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CourseName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("StudentsId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TeachersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentsId");
+
+                    b.HasIndex("TeachersId");
+
+                    b.ToTable("Course");
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -242,34 +275,6 @@ namespace WebAPI.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("test2.SemesterReg", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("SemesterNumber")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("StudentsId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TeachersId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StudentsId");
-
-                    b.HasIndex("TeachersId");
-
-                    b.ToTable("SemesterRegs");
-                });
-
             modelBuilder.Entity("test2.Students", b =>
                 {
                     b.Property<int>("Id")
@@ -279,9 +284,6 @@ namespace WebAPI.Migrations
 
                     b.Property<double>("CGPA")
                         .HasColumnType("float");
-
-                    b.Property<int?>("CoursesId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -293,8 +295,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CoursesId");
 
                     b.HasIndex("UserId");
 
@@ -308,9 +308,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CoursesId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -321,8 +318,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CoursesId");
 
                     b.HasIndex("UserId");
 
@@ -337,6 +332,17 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("AppUser");
+                });
+
+            modelBuilder.Entity("Core.Course", b =>
+                {
+                    b.HasOne("test2.Students", null)
+                        .WithMany("Course")
+                        .HasForeignKey("StudentsId");
+
+                    b.HasOne("test2.Teachers", null)
+                        .WithMany("Course")
+                        .HasForeignKey("TeachersId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -390,23 +396,8 @@ namespace WebAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("test2.SemesterReg", b =>
-                {
-                    b.HasOne("test2.Students", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("StudentsId");
-
-                    b.HasOne("test2.Teachers", null)
-                        .WithMany("semesterRegs")
-                        .HasForeignKey("TeachersId");
-                });
-
             modelBuilder.Entity("test2.Students", b =>
                 {
-                    b.HasOne("test2.Courses", null)
-                        .WithMany("Student")
-                        .HasForeignKey("CoursesId");
-
                     b.HasOne("Core.AppUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
@@ -414,10 +405,6 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("test2.Teachers", b =>
                 {
-                    b.HasOne("test2.Courses", null)
-                        .WithMany("Teachers")
-                        .HasForeignKey("CoursesId");
-
                     b.HasOne("Core.AppUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
