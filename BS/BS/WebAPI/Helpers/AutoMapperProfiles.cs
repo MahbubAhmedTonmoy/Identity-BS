@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Core.DTO;
+using test;
 using WebAPI.DTO;
 
 namespace WebAPI.Helpers
@@ -13,6 +11,7 @@ namespace WebAPI.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<CourseCreateDTO, Course>();
+            CreateMap<Post, PostView>();
         }
     }
 }

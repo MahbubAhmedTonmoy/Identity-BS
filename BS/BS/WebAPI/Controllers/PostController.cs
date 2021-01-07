@@ -50,11 +50,27 @@ namespace WebAPI.Controllers
             return Ok();
         }
         [HttpPost("AllPost")]
-        public async Task<IActionResult> GetAll()
+        public IActionResult GetAll()
         {
             // var post = repository.GetAll().Skip(1).Take(1);
             var post = appContext.Posts.Include(u => u.User.Email).Include(x => x.Comments).ThenInclude(x => x.Likes).Skip(1).Take(1);
             return Ok(post);
+        }
+        [HttpGet("ViewPostComment")]
+        public IActionResult ViewComment(int postId)
+        {
+            try
+            {
+                // var post = repository.GetAll().Skip(1).Take(1);
+                var comment = appContext.Posts.Include(x => x.Comments).Where(x => x.Id == postId);
+                //appContext.Posts.Include(u => u.User.Email).Include(x => x.Comments).ThenInclude(x => x.Likes).Skip(1).Take(1);
+                return Ok(comment);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
     }
 }
