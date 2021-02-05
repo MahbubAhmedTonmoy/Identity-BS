@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "VpM4DXGt1ZcOMiuCaacpj38HB62l6tzxJoKi7aoWKln8WW4cVEiF/NRnj5X5VYoL7+eXo8lpJdaJH1MW5K6mbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.11\\microsoft.extensions.dependencyinjection.3.1.11.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.11\\microsoft.extensions.dependencyinjection.abstractions.3.1.11.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

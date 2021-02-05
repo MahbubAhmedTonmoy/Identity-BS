@@ -1,0 +1,12 @@
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\bin\Debug\netcoreapp3.1\BusDomainCore.dll
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.csprojAssemblyReference.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.AssemblyInfoInputs.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.AssemblyInfo.cs
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\bin\Debug\netcoreapp3.1\RabbitMqBus.deps.json
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\bin\Debug\netcoreapp3.1\RabbitMqBus.dll
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\bin\Debug\netcoreapp3.1\RabbitMqBus.pdb
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\bin\Debug\netcoreapp3.1\BusDomainCore.pdb
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.csproj.CopyComplete
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.dll
+C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\RabbitMqBus\obj\Debug\netcoreapp3.1\RabbitMqBus.pdb
