@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Identity</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--
+                <li routerLinkActive="active"> <a [routerLink]="['/recipes']" routerLinkActive="router-link-active"  *ngIf="isAuthenticated">Recipes</a></li>
+                <li routerLinkActive="active"> <a routerLink = "/shopping-list" >Shopping List</a></li> -->
+            </ul>
+            <ul class ="nav navbar-nav navbar-right"> 
+                <li >
+                    <a style="cursor: pointer;">logout</a>
+                </li>
+                <li >
+                    <a [routerLink]="['registration']" style="cursor: pointer;">Reg</a>
+                </li>
+                <li >
+                    <a [routerLink]="['login']"  style="cursor: pointer;">login</a>
+                </li>
+                
+            </ul>
+        </div>   
+    </div>
+</nav>
