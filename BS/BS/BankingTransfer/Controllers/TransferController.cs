@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BankingTransfer.Application.DTO;
 using BankingTransfer.Application.Service;
 using BankingTransfer.Domain.Model;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +27,13 @@ namespace BankingTransfer.Controllers
         public ActionResult<IEnumerable<TransferLog>> Get()
         {
             return Ok(_service.GetTansferLogs());
+        }
+
+        [HttpPost]
+        public ActionResult Post(Loan loan)
+        {
+            _service.ApproveLoan(loan);
+            return Ok();
         }
 
     }

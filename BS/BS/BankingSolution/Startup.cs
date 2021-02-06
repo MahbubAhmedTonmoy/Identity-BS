@@ -7,7 +7,10 @@ using BankingSolution.Data.Context;
 using BankingSolution.Data.Repository;
 using BankingSolution.Domain.CommandHandler;
 using BankingSolution.Domain.Commands;
+using BankingSolution.Domain.EventHandler;
+using BankingSolution.Domain.Events;
 using BankingSolution.Domain.Interface;
+using BusDomainCore.Bus;
 using IOC;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -42,6 +45,8 @@ namespace BankingSolution
             services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<LoanApproveEventHandler>();
+            services.AddTransient<IEventHandler<LoanApproveEvent>, LoanApproveEventHandler>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -82,6 +87,12 @@ namespace BankingSolution
             {
                 endpoints.MapControllers();
             });
+            ConfigureEventBus(app);
+        }
+        private void ConfigureEventBus(IApplicationBuilder app)
+        {
+            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+            eventBus.Subscriber<LoanApproveEvent, LoanApproveEventHandler>();
         }
     }
 }

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using BankingTransfer.Application.Service;
 using BankingTransfer.Data.Context;
 using BankingTransfer.Data.Repository;
+using BankingTransfer.Domain.CommandHandlers;
+using BankingTransfer.Domain.Commands;
 using BankingTransfer.Domain.EventHandlers;
 using BankingTransfer.Domain.Events;
 using BusDomainCore.Bus;
@@ -38,10 +40,12 @@ namespace BankingTransfer
             services.AddDbContext<BankingDBContext_Transfer>(o => {
                 o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddTransient<IRequestHandler<CrateLoanCommand, bool>, LoanApproveCommandHandler>();
             services.AddTransient<ITransferService, TransferService>();
             services.AddTransient<ITransferRepositoy, TransferRepositoy>();
             services.AddTransient<TransferEventHandler>();
             services.AddTransient<IEventHandler<TransferCreatedEvent>, TransferEventHandler>();
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

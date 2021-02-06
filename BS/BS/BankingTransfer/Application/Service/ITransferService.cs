@@ -1,4 +1,6 @@
-﻿using BankingTransfer.Data.Repository;
+﻿using BankingTransfer.Application.DTO;
+using BankingTransfer.Data.Repository;
+using BankingTransfer.Domain.Commands;
 using BankingTransfer.Domain.Model;
 using BusDomainCore.Bus;
 using System;
@@ -19,6 +21,12 @@ namespace BankingTransfer.Application.Service
             _bus = bus;
         }
 
+        public void ApproveLoan(Loan loan)
+        {
+            var createLoanApproveCommand = new CrateLoanCommand(loan.ToAccount, loan.Ammount);
+            _bus.SandCommand(createLoanApproveCommand);
+        }
+
         public IEnumerable<TransferLog> GetTansferLogs()
         {
             return _repo.GetTansferLogs();
@@ -27,5 +35,6 @@ namespace BankingTransfer.Application.Service
     public interface ITransferService
     {
         IEnumerable<TransferLog> GetTansferLogs();
+        void ApproveLoan(Loan loan);
     }
 }
