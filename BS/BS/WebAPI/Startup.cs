@@ -19,9 +19,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Twilio.Clients;
 using UAM;
 using WebAPI.Data;
 using WebAPI.Infrastructure;
+using WebAPI.SMSservice;
 
 namespace WebAPI
 {
@@ -52,6 +54,7 @@ namespace WebAPI
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IEmailSender, EmailSender>();
             services.AddScoped<IJwtGenerator, JwtGenerator>();
+            services.AddHttpClient<ITwilioRestClient, TwilioClient>();
             services.AddCors();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);

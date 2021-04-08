@@ -7,9 +7,13 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 using UAM;
 using UAM.DTO;
 using WebAPI.Data;
+using WebAPI.DTO;
 using WebAPI.Infrastructure;
 
 namespace WebAPI.Controllers
@@ -26,10 +30,12 @@ namespace WebAPI.Controllers
         private readonly IJwtGenerator _jwtGenerator;
         private readonly IEmailSender _emailSender;
         private readonly AppDbContext appDbContext;
+        public readonly ITwilioRestClient _client;
 
         public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager,
             SignInManager<AppUser> signInManager, IConfiguration config, ILogger<AuthController> logger,
-             IJwtGenerator jwtGenerator, IEmailSender emailSender, AppDbContext appDbContext)
+             IJwtGenerator jwtGenerator, IEmailSender emailSender, AppDbContext appDbContext,
+             ITwilioRestClient client)
         {
             _jwtGenerator = jwtGenerator;
             _userManager = userManager;
@@ -39,9 +45,19 @@ namespace WebAPI.Controllers
             _logger = logger;
             _emailSender = emailSender;
             this.appDbContext = appDbContext;
+            _client = client;
         }
 
-
+        [HttpPost("Sms Send")]
+        public IActionResult SendSms(SmsMessage model)
+        {
+            var message = MessageResource.Create(
+                to: new PhoneNumber(model.To),
+                from: new PhoneNumber(model.From),
+                body: model.Message,
+                client: _client); // pass in the custom client
+            return Ok("Success");
+        }
         [HttpPost("registration")]
         public async Task<IActionResult> Registration(UserRegistrationDTO userRegistrationDto)
         {
