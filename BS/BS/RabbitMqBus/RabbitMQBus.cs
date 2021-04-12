@@ -34,6 +34,22 @@ namespace RabbitMqBus
         }
 
         //use different microservices to publish event 
+        //public void Publish<T>(T @event) where T : Event
+        //{
+        //    var factory = new ConnectionFactory() { HostName = "localhost" };
+        //    using (var connection = factory.CreateConnection())
+        //    using (var channel = connection.CreateModel())
+        //    {
+        //        var eventName = @event.GetType().Name;
+
+        //        channel.QueueDeclare(eventName, false, false, false, null);
+        //        var message = JsonConvert.SerializeObject(@event);
+        //        var body = Encoding.UTF8.GetBytes(message);
+        //        channel.BasicPublish("", eventName, null, body); // exchange type default cz [routing key = queue name ]
+        //    }
+        //}
+
+
         public void Publish<T>(T @event) where T : Event
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
@@ -41,15 +57,16 @@ namespace RabbitMqBus
             using (var channel = connection.CreateModel())
             {
                 var eventName = @event.GetType().Name;
+                channel.ExchangeDeclare(eventName, type: "fanout", false, false, null);
+                channel.ExchangeBind("Exchange-A", eventName, eventName); //your all handler - bind - 1 common exchange---bind-- - 1 Queue for this application
 
-                channel.QueueDeclare(eventName, false, false, false, null);
+                channel.QueueDeclare("mahbub", false, false, false, null);
+                channel.QueueBind("mahbub", "Exchange-A", eventName, null);
                 var message = JsonConvert.SerializeObject(@event);
                 var body = Encoding.UTF8.GetBytes(message);
-                channel.BasicPublish("", eventName, null, body); // exchange type default cz [routing key = queue name ]
+                channel.BasicPublish(eventName, eventName, null, body); // exchange type default cz [routing key = queue name ]
             }
         }
-
-
 
         public void Subscriber<T, TH>()
             where T : Event
@@ -89,13 +106,14 @@ namespace RabbitMqBus
 
             var eventName = typeof(T).Name;
 
-            channel.QueueDeclare(eventName, false, false, false, null);
-
+            //channel.QueueDeclare(eventName, false, false, false, null);
+            channel.QueueDeclare("mahbub", false, false, false, null);
             var consumer = new AsyncEventingBasicConsumer(channel);
 
             consumer.Received += Consumer_Received;  //delegate : placeholder for an EVENT , method pointer 
 
-            channel.BasicConsume(eventName, true, consumer);
+            //channel.BasicConsume(eventName, true, consumer);
+            channel.BasicConsume("mahbub", true, consumer);
 
         }
 

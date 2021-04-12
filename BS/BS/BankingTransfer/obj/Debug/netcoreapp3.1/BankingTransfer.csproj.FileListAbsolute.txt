@@ -6,7 +6,6 @@ C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\obj\Debug\netcor
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\obj\Debug\netcoreapp3.1\BankingTransfer.AssemblyInfo.cs
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\BankingTransfer.exe
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\BankingTransfer.deps.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingTransfer\bin\Debug\netcoreapp3.1\BankingTransfer.runtimeconfig.json

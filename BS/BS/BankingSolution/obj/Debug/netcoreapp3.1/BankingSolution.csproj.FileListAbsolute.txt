@@ -6,7 +6,6 @@ C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\obj\Debug\netcor
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\obj\Debug\netcoreapp3.1\BankingSolution.AssemblyInfo.cs
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\BankingSolution.exe
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\BankingSolution.deps.json
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\BankingSolution\bin\Debug\netcoreapp3.1\BankingSolution.runtimeconfig.json
