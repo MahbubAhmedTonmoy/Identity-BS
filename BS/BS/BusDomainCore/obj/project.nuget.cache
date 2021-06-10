@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "26v/7gfMXoGpOHvAi5WjzEDUPjhMxWkkIM79Tpwsbl7HP3Wa3VRCC27mIpdJW5Hp0Ys3tKCiq0qtBvuAscaHEw==",
+  "dgSpecHash": "HjqWv04YIOO02KrNm8IqSluowwAgGZ1EV1721jZnFHUj7gwqbVMtfcY/XQ235BI22xFVyBelVI4Jt+3kveJ4JQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],

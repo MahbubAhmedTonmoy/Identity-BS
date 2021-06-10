@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9s9uMcS1x1JdghZqg1L5JRfZYqSoIdCofUPXHQ9JPpmdB1TXiULxkVE99BlrAsA8eUpj/+ekOnk07KZEmxHlfA==",
+  "dgSpecHash": "OAmuJFi/bS/He9BZ14bwabFdqb9Rqse5ZFlGOZUET0EHwgC+CQeqpB+xH8dt6o6nUtXROKwCuJfqa4ie8XuXBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\7.0.0\\mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

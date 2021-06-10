@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -29,6 +30,8 @@ namespace UAM
                   new Claim(ClaimTypes.Name, user.UserName),
                   new Claim(ClaimTypes.Email, user.Email),
                   new Claim(ClaimTypes.Role, role[0]),
+                  new Claim("Origin", "Localhost"),
+                  new Claim("logincount", user.Id)
                  // new Claim(ClaimTypes.Role, role[1]),
                         //roleAssigned == Role.User ? new Claim("Create Role", "Create Role") : null,
                         
@@ -47,6 +50,7 @@ namespace UAM
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
+            //this.GetToeknInformation(tokenHandler.WriteToken(token));
             var refreshToken = GenerateRefreshToken();
             return new TokenResponse
             {
@@ -92,6 +96,22 @@ namespace UAM
                 rng.GetBytes(randomNumber);
                 return Convert.ToBase64String(randomNumber);
             }
+        }
+
+        public TokenInformation GetToeknInformation(string token)
+        {
+            TokenInformation result = new TokenInformation();
+            try
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var decodetoken = tokenHandler.ReadJwtToken(token).Payload.SerializeToJson();
+                result = JsonConvert.DeserializeObject<TokenInformation>(decodetoken);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return result;
         }
     }
 }

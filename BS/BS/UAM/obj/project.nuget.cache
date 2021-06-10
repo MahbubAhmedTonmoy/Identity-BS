@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CBh9DzBLKw7TBZT+FpvHaLP9p5veADDnGswIq+LgdjLXD0o3xmrTN+R9I8b5LXkWgpeb72fbcWtCISE7RAot4w==",
+  "dgSpecHash": "5ZUFLTMXRxAG4+7oxZlrF7zXFV5LWoyhjRK8QKbPHfjOQLsYg1dUbGrPG/AsCMp4xnnl9UdnwQb8lDn7DJtY+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.5\\microsoft.aspnetcore.authentication.jwtbearer.3.1.5.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RVyGm/PmwaNWgWGtKgIQpBcUzhsn/iNUgUTgL7+hfAVzvgnu/ygEnJYbP2OqrSZw4hjY3djlHG7JHLLD928neQ==",
+  "dgSpecHash": "VDVnqha+cipA4hvbWkHelVkiXnIqcBXUL8u5mZ8PPNzGjH4z1QKFWhhZ1ExpvTbfMzgyNkMDC+/rZob/R+EFPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.11\\microsoft.extensions.dependencyinjection.3.1.11.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I/9Bxzd2Rd8mUBbfjGYc5ahg0PTcwxwuoRZtLLMI9AAD/ZmHMk21ZKCiQdBA8JHHhc5BrPkpFdhx+Z4PXsljKw==",
+  "dgSpecHash": "wJ8PSpRHw2mvdxQ7HziojwUxe6Q2TiZABmA5HUfaQ6fV3GKHzPV1GrSgnXNq3z7AWsSwfhPXyrX/+6cUnX++Yw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

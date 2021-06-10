@@ -5474,11 +5474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
+      "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
       "projectName": "BankingSolution",
-      "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
+      "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BankingSolution\\BankingSolution.csproj",
       "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BankingSolution\\obj\\",
+      "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BankingSolution\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5497,8 +5497,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {
-              "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj"
+            "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {
+              "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj"
             }
           }
         }
@@ -5563,7 +5563,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

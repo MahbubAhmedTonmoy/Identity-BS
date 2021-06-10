@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {}
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
         "projectName": "BusDomainCore",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,18 +62,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
         "projectName": "IOC",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,11 +92,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
               },
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj"
               }
             }
           }
@@ -131,18 +131,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
         "projectName": "RabbitMqBus",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,8 +161,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
               }
             }
           }
@@ -205,7 +205,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

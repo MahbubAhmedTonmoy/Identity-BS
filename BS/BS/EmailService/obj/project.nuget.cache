@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YqLMhSld7AvnRhIV+5ySmF6cYJ3X4sb3bZr/hrxp9uNfAXl6cY25edZf3du7KWSm4q3nSQDtJW3Nd3b+NB8rRw==",
+  "dgSpecHash": "Z4c5aY+QzMyFKrGSEd1HKafmLIpjAhq6yABil01spo//i1bWOJ9axtCO/gR/KFZWm7sFCBEStUqb4X8cpFdW5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mailkit\\2.0.1\\mailkit.2.0.1.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.8\\microsoft.aspnetcore.http.features.3.1.8.nupkg.sha512",

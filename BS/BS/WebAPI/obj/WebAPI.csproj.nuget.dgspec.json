@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj": {}
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,18 +62,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
         "projectName": "EmailService",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,18 +128,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
         "projectName": "UAM",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,8 +158,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj"
               }
             }
           }
@@ -206,18 +206,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj": {
+    "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
+        "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\WebAPI\\obj\\",
+        "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,14 +236,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj"
               },
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\EmailService\\EmailService.csproj"
               },
-              "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj": {
-                "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj"
+              "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj": {
+                "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\UAM\\UAM.csproj"
               }
             }
           }
@@ -345,7 +345,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

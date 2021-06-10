@@ -22,3 +22,15 @@ C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csproj.CopyComplete
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.dll
 C:\Users\ahmed.mahbub\Desktop\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.pdb
+E:\Mahbub\Identity-BS\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.deps.json
+E:\Mahbub\Identity-BS\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.dll
+E:\Mahbub\Identity-BS\BS\BS\UAM\bin\Debug\netcoreapp3.1\UAM.pdb
+E:\Mahbub\Identity-BS\BS\BS\UAM\bin\Debug\netcoreapp3.1\Core.dll
+E:\Mahbub\Identity-BS\BS\BS\UAM\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csprojAssemblyReference.cache
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.AssemblyInfoInputs.cache
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.AssemblyInfo.cs
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csproj.CoreCompileInputs.cache
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.csproj.CopyComplete
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.dll
+E:\Mahbub\Identity-BS\BS\BS\UAM\obj\Debug\netcoreapp3.1\UAM.pdb

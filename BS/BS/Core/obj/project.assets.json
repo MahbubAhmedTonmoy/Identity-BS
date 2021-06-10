@@ -817,11 +817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
+      "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
+      "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\Core\\obj\\",
+      "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -872,7 +872,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

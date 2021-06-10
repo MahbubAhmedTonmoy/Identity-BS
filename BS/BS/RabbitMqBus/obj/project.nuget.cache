@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jXlzjbhThSRODL6zojb9FNWBc3E/DZm6cBgpgsZsxm44+pq8Q3GHQ44UtFzFNWScUX7kG8nAHEO4bkrr+nvLPg==",
+  "dgSpecHash": "CRhvN5rLMJ/UMLN2fs0Ck+uAOlElVyUs7TZW1faGEda1CR1AD2WsYxmWESM3XKt9kBlO1p7hRcuI0/s1sJ1VlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
+  "projectFilePath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.11\\microsoft.extensions.dependencyinjection.abstractions.3.1.11.nupkg.sha512",

@@ -277,11 +277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+      "projectUniqueName": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
       "projectName": "IOC",
-      "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
+      "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\IOC.csproj",
       "packagesPath": "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\IOC\\obj\\",
+      "outputPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\IOC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed.mahbub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -300,11 +300,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
-              "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
+            "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj": {
+              "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\BusDomainCore\\BusDomainCore.csproj"
             },
-            "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
-              "projectPath": "C:\\Users\\ahmed.mahbub\\Desktop\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj"
+            "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj": {
+              "projectPath": "E:\\Mahbub\\Identity-BS\\BS\\BS\\RabbitMqBus\\RabbitMqBus.csproj"
             }
           }
         }
@@ -339,7 +339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
