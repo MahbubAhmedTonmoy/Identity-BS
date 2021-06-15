@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -22,20 +23,18 @@ namespace UAM
             _config = config;
             _logger = logger;
         }
-        public TokenResponse CreateToken(AppUser user, string[] role)
+        public TokenResponse CreateToken(AppUser user, List<string> roles)
         {
-            var claims = new[]
+            var claims = new List<Claim>
             {
                   new Claim(ClaimTypes.NameIdentifier, user.Id),
                   new Claim(ClaimTypes.Name, user.UserName),
                   new Claim(ClaimTypes.Email, user.Email),
-                  new Claim(ClaimTypes.Role, role[0]),
                   new Claim("Origin", "Localhost"),
                   new Claim("logincount", user.Id)
-                 // new Claim(ClaimTypes.Role, role[1]),
-                        //roleAssigned == Role.User ? new Claim("Create Role", "Create Role") : null,
-                        
             };
+            claims.AddRange(roles.Select(role => new Claim(ClaimsIdentity.DefaultRoleClaimType, role)));
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
 
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);

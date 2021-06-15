@@ -3,10 +3,7 @@ using System;
 using System.IO;
 using System.Linq;
 using MailKit.Net.Smtp;
-using System.Text;
 using System.Threading.Tasks;
-using System.Net;
-using MailKit.Security;
 
 namespace EmailService
 {
@@ -25,7 +22,7 @@ namespace EmailService
         public async Task SendEmailAsync(Message message)
         {
             var emailMessage = CreateEmailMessage(message);
-            SendAsync(emailMessage);
+            await SendAsync(emailMessage);
         }
         private MimeMessage CreateEmailMessage(Message message)
         {
@@ -60,7 +57,7 @@ namespace EmailService
             {
                 try
                 {
-                    client.Connect(_emailConfiguration.SmtpServer, _emailConfiguration.Port, true);
+                    client.Connect(_emailConfiguration.SmtpServer, _emailConfiguration.Port, false);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
                     client.Authenticate(_emailConfiguration.UserName, _emailConfiguration.Password);
 
@@ -84,7 +81,7 @@ namespace EmailService
             {
                 try
                 {
-                    await client.ConnectAsync(_emailConfiguration.SmtpServer, _emailConfiguration.Port, true);
+                    await client.ConnectAsync(_emailConfiguration.SmtpServer, _emailConfiguration.Port, false);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
                     await client.AuthenticateAsync(_emailConfiguration.UserName, _emailConfiguration.Password);
 

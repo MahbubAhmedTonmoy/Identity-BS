@@ -22,6 +22,7 @@ using Microsoft.OpenApi.Models;
 using Twilio.Clients;
 using UAM;
 using WebAPI.Data;
+using WebAPI.Helpers;
 using WebAPI.Infrastructure;
 using WebAPI.SMSservice;
 
@@ -50,7 +51,8 @@ namespace WebAPI
                     opt.TokenLifespan = TimeSpan.FromHours(2)); // confirm email , reset password token
 
             var emailConfig = Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
-            services.AddSingleton(emailConfig); 
+            services.AddSingleton(emailConfig);
+            services.AddSingleton<EmailTemplate>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IEmailSender, EmailSender>();
             services.AddScoped<IJwtGenerator, JwtGenerator>();

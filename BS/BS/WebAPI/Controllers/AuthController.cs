@@ -14,6 +14,7 @@ using UAM;
 using UAM.DTO;
 using WebAPI.Data;
 using WebAPI.DTO;
+using WebAPI.Helpers;
 using WebAPI.Infrastructure;
 
 namespace WebAPI.Controllers
@@ -31,11 +32,12 @@ namespace WebAPI.Controllers
         private readonly IEmailSender _emailSender;
         private readonly AppDbContext appDbContext;
         public readonly ITwilioRestClient _client;
+        private readonly EmailTemplate emailTemplate;
 
         public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager,
             SignInManager<AppUser> signInManager, IConfiguration config, ILogger<AuthController> logger,
              IJwtGenerator jwtGenerator, IEmailSender emailSender, AppDbContext appDbContext,
-             ITwilioRestClient client)
+             ITwilioRestClient client, EmailTemplate emailTemplate)
         {
             _jwtGenerator = jwtGenerator;
             _userManager = userManager;
@@ -46,6 +48,7 @@ namespace WebAPI.Controllers
             _emailSender = emailSender;
             this.appDbContext = appDbContext;
             _client = client;
+            this.emailTemplate = emailTemplate;
         }
 
         [HttpPost("Sms Send")]
@@ -162,8 +165,8 @@ namespace WebAPI.Controllers
                 if (result.Succeeded)
                 {
                     var role = await _userManager.GetRolesAsync(userExist);
-                    string[] roleAssigned = role.ToArray();
-                    var token = _jwtGenerator.CreateToken(userExist, roleAssigned);
+                    //string[] roleAssigned = role.ToArray();
+                    var token = _jwtGenerator.CreateToken(userExist, role.ToList());
                     userExist.RefreshToken = token.RefreshToken;
                     appDbContext.AppUsers.Update(userExist);
                     appDbContext.SaveChanges();
@@ -202,8 +205,8 @@ namespace WebAPI.Controllers
                     return BadRequest($"this {email} is not resisrered");
                 }
                 var role = await _userManager.GetRolesAsync(userExist);
-                string[] roleAssigned = role.ToArray();
-                return Ok(_jwtGenerator.CreateToken(userExist, roleAssigned));
+                //string[] roleAssigned = role.ToArray();
+                return Ok(_jwtGenerator.CreateToken(userExist, role.ToList()));
             }
             catch (Exception ex)
             {
@@ -220,9 +223,10 @@ namespace WebAPI.Controllers
             var user = await _userManager.FindByEmailAsync(forgotPasswordModel.Email);
             if (user == null)
                 return BadRequest($"{user} not found");
+            var emailContent = this.emailTemplate.FindEmailTemplate("Reset password");
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var callback = Url.Action(nameof(ResetPassword), "Auth", new { token, email = user.Email }, Request.Scheme);
-            var message = new Message(new string[] { user.Email }, "Reset password token", callback, null);
+            var message = new Message(new string[] { user.Email }, emailContent.TemplateSubject, callback, null);
             await _emailSender.SendEmailAsync(message);
 
             return Ok(token);
